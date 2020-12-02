@@ -1,0 +1,15 @@
+.panel {
+  width: 320px;
+  font-size: 1.25rem;
+}
+
+.btn {
+  position: relative;
+  font-size: 1.25rem;
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  top: .75rem;
+}

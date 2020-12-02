@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="resources/bootstrap.css">
+    <link rel="stylesheet" href="resources/fa/css/all.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <div class="panel">
+        <div class="panel-section panel-section-header">
+            <div class="icon-section-header">
+                <i class="fas fa-lock icon" style="font-size: 1.5rem"></i>
+            </div>
+            <div class="text-section-header">Redirect Blocker</div>
+        </div>
+        <div class="col my-3">
+            <p class="font-weight-light" style="font-size:1.25rem">
+                This browser extension blocks the redirect
+                from the identity provider to the relying party.
+            </p>
+            <ul id="idp" class="list-group mb-3">
+                <li class="list-group-item">
+                    <i class="fab fa-google mr-2"></i> Google
+                </li>
+            </ul>
+            <button id="enable" type="button" class="btn btn-block btn-danger toggle">
+                <i class="fas fa-lock icon"></i> Enable
+            </button>
+            <button id="disable" type="button" class="btn btn-block btn-primary toggle">
+                <i class="fas fa-lock-open icon"></i> Disable
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

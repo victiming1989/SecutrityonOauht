@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "RedirectBlocker",
+  "version": "1.0",
+  "description": "Blocks the redirect to the redirect_uri",
+  "icons": {
+    "48": "icons/lock.svg",
+    "96": "icons/lock.svg"
+  },
+  "background": {
+    "scripts": ["blocker.js"]
+  },
+  "browser_action": {
+    "default_title": "Redirect Blocker",
+    "default_popup": "popup/popup.html",
+    "browser_style": true,
+    "default_icon": {
+      "16": "icons/lock.svg",
+      "32": "icons/lock.svg"
+    }
+  },
+  "applications": {
+    "gecko": {
+      "id": "redirect-blocker@benolli.eu"
+    }
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "GetCookies",
+  "version": "1.0",
+  "description": "Get all the browser cookies",
+  "icons": {
+    "48": "icons/cookie.svg",
+    "96": "icons/cookie.svg"
+  },
+  "background": {
+    "scripts": ["cookies.js"]
+  },
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "Get cookies",
+    "default_icon": {
+      "16": "icons/cookie.svg",
+      "32": "icons/cookie.svg"
+    }
+  },
+  "applications": {
+    "gecko": {
+      "id": "get-cookies@benolli.eu"
+    }
+  },
+  "permissions": [
+    "cookies",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ]
+}
